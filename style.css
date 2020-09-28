@@ -16,7 +16,8 @@ body {
   font-family: skrivmaskin;
 }
 
-#konstbody {
+#kontaktabody {
+  /*Speciell bakgrund, endast för konstbodyn*/
   background-color: white;
 }
 
@@ -62,7 +63,7 @@ footer {
   color: white;
 }
 
-#huvuddel {
+#indexdel {
   margin-top: 4%;
   margin-bottom: 4%;
   margin-left: 30%;
@@ -72,7 +73,7 @@ footer {
   background-color: rgba(177, 177, 177, 0.9);
 }
 
-#Huvudmain {
+#indexbody {
   /*Bakgrundsbild för startsidan*/
   /*KAN MAN GÖRA SÅ HÄR???*/
 
@@ -88,7 +89,7 @@ footer {
   padding-right: 20px;
 }
 
-#konstverk {
+#Konstverkdel {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -99,31 +100,21 @@ footer {
   margin-top: 0%;
 }
 
-#konstverk div {
+.konstverk-container {
   width: 32%;
 }
 
-.button {
-  border: none;
-  background: url("bilder/Andreas.jpg") no-repeat top left;
-  padding: 2px 8px;
-}
-
-#pax {
+#herrarnadel {
   margin: 15%;
 }
 
 main h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   /*Rubrik utanför huvudelement*/
   font-size: 30;
 }
 
-#fullständigkontaktinfo {
+#kontaktadel {
   align-items: center;
   font-size: 21px;
   margin-top: 0%;
