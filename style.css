@@ -1,66 +1,65 @@
-@font-face {
-  font-family: skrivmaskin;
-  src: url("1942.ttf");
-}
 * {
   text-align: center;
+  font-family: skrivmaskin;
+}
+
+@font-face {
+  font-family: "skrivmaskin";
+  src: url("1942.ttf");
+}
+
+header {
+  padding: 8px;
+  background-color: black;
+  color: white;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a:hover {
+  color: grey;
+}
+
+header nav a {
+  padding-left: 8px;
+  padding-right: 8px;
+  text-decoration: none;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  padding: 8px;
+  background-color: black;
+  color: white;
+}
+
+h1,
+h3 {
+  font-size: 30;
 }
 
 body {
   margin: 0;
   padding: 0;
-  /*Ändra all mellanrum från standard till precis i kanterna*/
+}
+
+#indexbody {
+  background-image: url(bilder/bild-bakgrund.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#konstverkbody {
   background-color: rgb(209 207 207);
-  /*font-family: "Roboto Slab", serif;*/
-  /*font-family: "AlteSchwabacher", 1942 report; */
-  font-family: skrivmaskin;
-}
-
-#kontaktabody {
-  /*Speciell bakgrund, endast för konstbodyn*/
-  background-color: white;
-}
-
-header {
-  /*Headern som är likadan på alla sidor*/
-  padding: 8px; /*Sätter en gräns precis utanför innehållet, eftersom: Margin, Border, Padding, Content*/
-  background-color: black; /*Bakgrundsfärg*/
-  color: white; /*Textfärg*/
-}
-
-header img {
-  align-content: left;
-}
-
-nav {
-  /*Specifika flexbox inställningar för alla nav-element*/
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-a:hover {
-  color: grey;
-}
-nav a {
-  /*mellanrum mellan nav-länkarna*/
-  /*padding: 10px;*/
-  padding-left: 8px;
-  padding-right: 8px;
-  text-decoration: none; /*Ta bort all styling från texten*/
-  color: white;
-}
-
-a {
-  /*Anpassade inställningar för a-element utanför nav-elementet*/
-  text-decoration: none; /*Ta bort all styling från texten*/
-  color: black;
-}
-
-footer {
-  /*Footern som är likadan på alla sidor*/
-  padding: 8px;
-  background-color: black;
-  color: white;
 }
 
 #indexdel {
@@ -73,16 +72,7 @@ footer {
   background-color: rgba(177, 177, 177, 0.9);
 }
 
-#indexbody {
-  /*Bakgrundsbild för startsidan*/
-  /*KAN MAN GÖRA SÅ HÄR???*/
-
-  background-image: url(bilder/bild-bakgrund.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-#huvuddel div {
+#indexdel div {
   border: 5px solid black;
   border-style: dotted;
   padding-left: 20px;
@@ -93,33 +83,26 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 5%;
   margin-top: 0%;
-}
-
-.konstverk-container {
-  width: 32%;
+  font-size: 15px;
 }
 
 #herrarnadel {
   margin: 15%;
 }
 
-main h1,
-h3 {
-  /*Rubrik utanför huvudelement*/
-  font-size: 30;
-}
-
 #kontaktadel {
-  align-items: center;
   font-size: 21px;
   margin-top: 0%;
   margin-bottom: 4%;
   margin-left: 30%;
   margin-right: 30%;
   padding: 1%;
+}
+
+.konstverk-container {
+  width: 32%;
 }
