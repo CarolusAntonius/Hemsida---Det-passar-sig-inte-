@@ -1,20 +1,31 @@
 * {
   text-align: center;
-  font-family: skrivmaskin, serif;
+  font-family: skrivmaskin;
 }
 
 @font-face {
-  font-family: "skrivmaskin";
-  src: url("1942.ttf");
+  font-family: skrivmaskin;
+  src: url("1942.ttf"); /*Alternativ font???*/
+}
+
+@keyframes herrarnabodyanimation {
+  from {
+    background-color: black;
+  }
+  to {
+    background-color: white;
+  }
 }
 
 header {
-  padding: 8px;
-  background-color: black;
-  color: white;
+  /*Headern som är likadan på alla sidor*/
+  padding: 8px; /*Sätter en gräns precis utanför innehållet, eftersom: Margin, Border, Padding, Content*/
+  background-color: black; /*Bakgrundsfärg*/
+  color: white; /*Textfärg*/
 }
 
 header nav {
+  /*Specifika flexbox inställningar för alla nav-element*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,21 +33,30 @@ header nav {
 
 a:hover {
   color: grey;
+  transition: 0.5s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.05);
 }
 
 header nav a {
+  /*mellanrum mellan nav-länkarna*/
+  /*padding: 10px;*/
   padding-left: 8px;
   padding-right: 8px;
-  text-decoration: none;
+  text-decoration: none; /*Ta bort all styling från texten*/
   color: white;
 }
 
 a {
-  text-decoration: none;
+  /*Anpassade inställningar för a-element utanför nav-elementet*/
+  text-decoration: none; /*Ta bort all styling från texten*/
   color: black;
 }
 
 footer {
+  /*Footern som är likadan på alla sidor*/
   padding: 8px;
   background-color: black;
   color: white;
@@ -44,6 +64,7 @@ footer {
 
 h1,
 h3 {
+  /*Rubrik utanför huvudelement*/
   font-size: 30;
 }
 
@@ -56,13 +77,24 @@ body {
   background-image: url(bilder/bild-bakgrund.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  background-color: rgb(209 207 207);
+}
+
+#herrarnabody {
+  animation-name: herrarnabodyanimation;
+  animation-duration: 0.5s;
 }
 
 #konstverkbody {
   background-color: rgb(209 207 207);
 }
 
+#kontaktabody {
+  background-color: white;
+}
+
 #indexdel {
+  /*inledning*/
   margin-top: 4%;
   margin-bottom: 4%;
   margin-left: 30%;
@@ -73,6 +105,7 @@ body {
 }
 
 #indexdel div {
+  /*inledningens ram*/
   border: 5px solid black;
   border-style: dotted;
   padding-left: 20px;
@@ -80,6 +113,7 @@ body {
 }
 
 #Konstverkdel {
+  /*Konstverk*/
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
